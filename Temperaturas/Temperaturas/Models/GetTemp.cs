@@ -5,6 +5,7 @@ namespace Temperaturas.Models
 {
     class GetTemp
     {
+        ErrorMessage e = new ErrorMessage();
         //Attributes
         private string temp;
 
@@ -24,7 +25,7 @@ namespace Temperaturas.Models
             }
             catch (System.Exception)
             {
-                MessageBox.Show("El valor ingresado no es un número", "Error");
+                MessageBox.Show(e.Error4, "Error");
                 return false;
             }
         }
@@ -33,8 +34,5 @@ namespace Temperaturas.Models
         {
             return string.IsNullOrEmpty(temp);
         }
-
-
-     
     }
 }

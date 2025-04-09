@@ -14,5 +14,6 @@ namespace Temperaturas.Models
         public string Error2 = "Debe seleccionar la temperatura inicial antes de convertir";
         //Error cuando se elige la misma temperatura en btnRadio y en el btn
         public string Error3 = "La temperatura no puede ser la misma";
+        public string Error4 = "El valor ingresado no es un número";
     }
 }

@@ -149,5 +149,7 @@ namespace Temperaturas
         {
             textBox.Clear();
         }
+
+
     }
 }
